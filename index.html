@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fatima's Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -12,7 +14,9 @@
   </head>
   <body>
     <!-- scroll to top of page btn  -->
-    <!-- light/dark btn  -->
+     <div class="scrollToTop-btn flex-center">
+      <i class="fas fa-arrow-up"></i>
+     </div>
     <!-- header section  -->
     <header>
       <div class="nav-bar">
@@ -26,6 +30,10 @@
             <a href="#portfolio">portfolio</a>
             <a href="#contact">Contact</a>
           </div>
+          <div class="theme-btn flex-center">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+           </div>
         </div>
       </div>
     </header>
@@ -48,7 +56,7 @@
             quasi quaerat beatae tenetur voluptas adipisci libero a suscipit?
             Hic, eveniet quo! Blanditiis.
           </p>
-          <a href="" class="btn"
+          <a href="#contact" class="btn"
             >Contact me <i class="fas fa-arrow-circle-right"></i
           ></a>
         </div>
@@ -56,21 +64,22 @@
           <img src="images/home-img.png" alt="image" />
         </div>
       </div>
-      <a href="#about" class="scroll-down"
+      <!-- <a href="#about" class="scroll-down"
         >Scroll down <i class="fas fa-arrow-down"></i
-      ></a>
+      ></a> -->
+      <div id="about" ></div>
     </section>
     <!-- about section  -->
-    <section class="about section" id="about">
-      <div class="container flex-center">
-        <h1 class="section-title">About ME</h1>
+    <section class="about section" style="margin-top: 150px;">
+      <div class="container flex-center"  >
+        <h1 class="section-title" >About ME</h1>
         <div class="content flex-center">
           <div class="about-img">
             <img src="images/about img.png" alt="image" />
           </div>
           <div class="about-info">
             <div class="decs">
-              <h3>I'm fatima</h3>
+              <h3 >I'm fatima</h3>
               <h4>
                 a <span>mern stack</span> based in
                 <span>Mogadisho, Somalia</span>
@@ -98,7 +107,7 @@
                 >
               </li>
             </ul>
-            <a href="" class="btn"
+            <a href="" id="skill" class="btn"
               >Download Cv <i class="fas fa-download"></i
             ></a>
           </div>
@@ -106,7 +115,7 @@
       </div>
     </section>
     <!-- skill and education section  -->
-    <section class="skills section" id="skill">
+    <section class="skills section" style="margin-top: 150px;" >
       <div class="container flex-center">
         <h1 class="section-title">Skills</h1>
         <div class="content">
@@ -159,7 +168,7 @@
                   </li>
                   <li class="bar">
                     <div class="info">
-                      <span>tailwind and bootstrab</span>
+                      <span>tailwind and bootstrap</span>
                       <span>89%</span>
                     </div>
                     <div class="line tailwind-bootstrap"></div>
@@ -174,20 +183,77 @@
               </ul>
             </div>
             <div class="education">
-                <h4><label>Awards</label></h4>
+                <h4>.<labelj ></labelj></h4>
                 <ul class="edu-list">
-                   <li class="item">
-                    <span class="year">2023</span>
-                    <p>top student achievement</p>
-                   </li> 
+                  <li class="bar">
+                    <div class="info">
+                      <span>React</span>
+                      <span>81%</span>
+                    </div>
+                    <div class="line react"></div>
+                  </li>
+                  <li class="bar">
+                      <div class="info">
+                        <span>Node.js and express.js</span>
+                        <span>84%</span>
+                      </div>
+                      <div class="line node"></div>
+                    </li>
+                    <li class="bar">
+                      <div class="info">
+                        <span>mongoDB</span>
+                        <span>86%</span>
+                      </div>
+                      <div class="line mongo"></div>
+                    </li>
+                    <li class="bar">
+                      <div class="info">
+                        <span>Next.js</span>
+                        <span>77%</span>
+                      </div>
+                      <div class="line next"></div>
+                    </li>
                 </ul>
             </div>
+            <div class="education">
+              <h4>.<labelj ></labelj></h4>
+              <ul class="edu-list">
+                <li class="bar">
+                  <div class="info">
+                    <span>Github and git</span>
+                    <span>91%</span>
+                  </div>
+                  <div class="line git"></div>
+                </li>
+                <li class="bar">
+                    <div class="info">
+                      <span>figma</span>
+                      <span>98%</span>
+                    </div>
+                    <div class="line figma"></div>
+                  </li>
+                  <li class="bar">
+                    <div class="info">
+                      <span>Wordress</span>
+                      <span>88%</span>
+                    </div>
+                    <div class="line wordpress"></div>
+                  </li>
+                  <li class="bar">
+                    <div class="info">
+                      <span>Adobe illustrator</span>
+                      <span>96%</span>
+                    </div>
+                    <div class="line AI"></div>
+                  </li>
+              </ul>
           </div>
-          <div class="skills-decs">
+          </div>
+          <!-- <div class="skills-decs">
             <h3>Work and Exprience</h3>
           
           </div>
-          <div class="skills-info ">
+          <div class="skills-info " >
             <div class="exprience-card">
                 <div class="upper">
                     <h3>title</h3>
@@ -198,11 +264,12 @@
                 <h4><label>job</label></h4>
                 <p>decs of job</p>
             </div>
-        </div>
+        </div> -->
       </div>
+      <div id="service"></div>
     </section>
     <!-- service section  -->
-     <section class="services section" id="service">
+     <section class="services section"  style="margin-top: 200px;">
 <div class="container flex-center">
     <h1 class="section-title">Services</h1>
     <div class="content">
@@ -321,9 +388,10 @@
         </ul>
     </div>
 </div>
+<div id="portfolio"></div>
      </section>
     <!-- project section  -->
-     <section class="portfolio section" id="portfolio">
+     <section class="portfolio section" style="margin-top: 200px;">
         <div class="container flex-center">
             <h1 class="section-title">Portfolio</h1>
             <div class="content">
@@ -435,11 +503,135 @@
             </div>
         </div>
      <!-- get in touch section  -->
-     
+     <div class="get-in-touch sub-section">
+      <div class="container">
+        <div class="content flex-center">
+          <div class="contact-card flex-center">
+            <div class="title">
+              <h4>Let's Talk</h4>
+              <h3>About Your</h3>
+              <h2>Next Project</h2>
+            </div>
+            <div class="contact-btn">
+              <a href="#contact" class="btn">Get In Touch <i class="fas fa-paper-plane"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
     <!-- my client section  -->
-    </section>
+<!-- <div class="my-client sub-section">
+  <div class="container flex-center">
+    <h1 class="section-title">My Clients</h1>
+    <div class="content">
+      <div class="swiper client-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide flex-center">
+            <div class="client-img"><img src="images/home-img.png" alt=""></div>
+          <div class="client-details">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, perferendis.</p>
+            <h3>kim jennie1</h3>
+            <span>kpop ido at lload</span>
+          </div>
+        </div>
+        <div class="swiper-slide flex-center">
+          <div class="client-img"><img src="images/home-img.png" alt=""></div>
+        <div class="client-details">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, perferendis.</p>
+          <h3>kim jennie2</h3>
+          <span>kpop ido at lload</span>
+        </div>
+      </div>
+      <div class="swiper-slide flex-center">
+        <div class="client-img"><img src="images/home-img.png" alt=""></div>
+      <div class="client-details">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, perferendis.</p>
+        <h3>kim jennie3</h3>
+        <span>kpop ido at lload</span>
+      </div>
+    </div>
+        <div class="swiper-button-next"><i class="fas fa-chevron-right"></i></div>
+        <div class="swiper-button-prev"><i class="fas fa-chevron-left"></i></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div> -->
+<div id="contact"></div>    
+</section>
    
     <!-- contact section  -->
+<section class="contact section" style="margin-top: 250px;">
+  <div class="container flex-center">
+    <h1 class="section-title">Contact Me</h1>
+    <div class="content">
+      <div class="contact-left">
+        <h2>Let's discuss your project</h2>
+        <ul class="contact-list">
+          <li>
+            <h3 class="item-title"><i class="fas fa-phone"></i>Phone:</h3>
+          <span>+252 619-609-830</span>
+          </li>
+          <li>
+            <h3 class="item-title"><i class="fas fa-envelope"></i>Email:</h3>
+          <span><a href="mailto:faatimaapdirahmaanali@gmail.com">faatimaapdirahmaanali@gmail.com</a></span>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-right">
+        <p>I'm always open for <span>discussion</span></p>
+        <form action="" class="contact-form">
+          <div class="first-row">
+            <input type="text" placeholder="Name..."/>
+          </div>
+          <div class="second-row">
+            <input type="email" placeholder="email..."/>
+            <input type="text" class="sub" placeholder="subject..."/>
+          </div>
+          <div class="third-row">
+            <textarea name="message" id="" rows="7" placeholder="message..."></textarea>
+          </div>
+          <button class="btn" type="submit">send message <i class="fas fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- footer section  -->
+ <footer>
+  <div class="footer-container">
+    <div class="about me">
+      <h2>fatima</h2>
+      <p>Full stack developer</p>
+      <a href="#about">About me</a>
+    </div>
+    <div class="hr"></div>
+    <div class="info me">
+      <h3>more</h3>
+      <ul>
+        <li><a href="#skill">My Skills</a></li>
+        <li><a href="#service">Service i offer</a></li>
+        <li><a href="#portfolio">My portfolio</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
+    </div>
+    <div class="ht"></div>
+    <div class="follow me">
+      <h3>Follow</h3>
+    <ul>
+      <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href=""><i class="fab fa-instagram"></i></a></li>
+      <li><a href=""><i class="fab fa-github"></i></a></li>
+      <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+    </ul>
+    </div>
+    
+  </div>
+  <div class="footer-copyright me"><p>© 2024 by Fatima. All rights reserved</p></div>
+ </footer>
+    <!-- javascript -->
     <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
   </body>
 </html>
