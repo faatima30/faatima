@@ -24,3 +24,26 @@ modalclosebtns.forEach((modalclosebtn) => {
     });
   });
 });
+// portfolio section modal
+const portfoliomodals = document.querySelectorAll(".portfolio-modal");
+const imgcards = document.querySelectorAll(".img-card");
+const portfoliomodalclosebtns = document.querySelectorAll(
+  ".portfolio-close-btn"
+);
+
+var portfoliomodal = function (modalclick) {
+  portfoliomodals[modalclick].classList.add("active");
+};
+imgcards.forEach((imgcard, i) => {
+  imgcard.addEventListener("click", () => {
+    portfoliomodal(i);
+  });
+});
+
+portfoliomodalclosebtns.forEach((portfoliomodalclosebtn) => {
+  portfoliomodalclosebtn.addEventListener("click", () => {
+    portfoliomodals.forEach((portfoliomodalview) => {
+      portfoliomodalview.classList.remove("active");
+    });
+  });
+});
