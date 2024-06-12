@@ -67,7 +67,7 @@ body {
   align-items: center;
 }
 .section {
-  margin-top: 100px;
+  margin-top: 200px;
   position: relative;
   width: 1150px;
   margin-left: auto;
@@ -138,7 +138,7 @@ header.sticky {
 }
 .nav-items a {
   color: var(--first-color);
-  font-style: var(--normal-font-size);
+  font-size: var(--normal-font-size);
   font-weight: 500;
 }
 .nav-items a:not(:last-child) {
@@ -171,7 +171,7 @@ header.sticky {
 }
 .home-container .media-icons a {
   color: var(--second-color);
-  font-style: 1.5em;
+  font-size: 1.5em;
   margin: 10px 0;
 }
 .home-container .media-icons a:hover {
@@ -224,7 +224,7 @@ header.sticky {
 }
 .home .scroll-down i {
   color: var(--second-color);
-  font-style: 1.2em;
+  font-size: 1.2em;
   animation: arrow-down ease 2s infinite;
 }
 @keyframes arrow-down {
@@ -254,12 +254,12 @@ header.sticky {
   max-width: 600;
 }
 .about-info .decs h3 {
-  font-style: 2em;
+  font-size: 2em;
   font-weight: 600;
   margin-bottom: 10px;
 }
 .about-info .decs h4 {
-  font-style: 1.3em;
+  font-size: 1.3em;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -310,7 +310,7 @@ header.sticky {
 .skills-info h4 label {
   background: var(--second-color);
   color: #fff;
-  font-style: var(--normal-font-size);
+  font-size: var(--normal-font-size);
   font-weight: 400;
   padding: 5px 15px;
   border-radius: 5px;
@@ -333,11 +333,11 @@ header.sticky {
 }
 .edu-list .item p {
   color: var(--third-color);
-  font-style: var(--small-font-size);
+  font-size: var(--small-font-size);
 }
 .edu-list .item p span {
   color: var(--first-color);
-  font-style: var(--normal-font-size);
+  font-size: var(--normal-font-size);
   font-weight: 500;
 }
 .bar {
@@ -353,7 +353,7 @@ header.sticky {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5px;
-  font-style: var(--small-font-size);
+  font-size: var(--small-font-size);
 }
 .bar .info span {
   font-weight: 500;
@@ -375,47 +375,147 @@ header.sticky {
   border-radius: 2px;
   width: 100%;
 }
-.bar .html::before{
-    width: 99%;
+.bar .html::before {
+  width: 99%;
 }
-.bar .css::before{
-    width: 90%;
+.bar .css::before {
+  width: 90%;
 }
-.bar .tailwind-bootstrap::before{
-    width: 89%;
+.bar .tailwind-bootstrap::before {
+  width: 89%;
 }
-.bar .js::before{
-    width: 80%;
+.bar .js::before {
+  width: 80%;
 }
-.exprience-card{
-    background: var(--card-bg-color);
-    border-bottom: 3px solid var(--second-color);
-    padding: 35px;
-    border-radius: 6px;
-    box-shadow: var(--box-shadow);
-    transition: .3s ease;
+.exprience-card {
+  background: var(--card-bg-color);
+  border-bottom: 3px solid var(--second-color);
+  padding: 35px;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+  transition: 0.3s ease;
 }
-.exprience-card .upper{
-    line-height: 30px;
+.exprience-card .upper {
+  line-height: 30px;
 }
-.exprience-card h3{
-    font-style: 1.3em;
-    font-weight: 700;
+.exprience-card h3 {
+  font-size: 1.3em;
+  font-weight: 700;
 }
-.exprience-card h5{
-    font-style: var(--small-font-size);
-    font-weight: 500;
-    font-style: italic;
+.exprience-card h5 {
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  font-style: italic;
 }
-.exprience-card span{
-color: var(--third-color);
+.exprience-card span {
+  color: var(--third-color);
 }
-.exprience-card .hr{
-    width: 100%;
-    height:2px;
-    background: var(--line-color);
-    margin: 10px 0 22px;
+.exprience-card .hr {
+  width: 100%;
+  height: 2px;
+  background: var(--line-color);
+  margin: 10px 0 22px;
 }
-.edu-list .item:hover, .bar:hover, .exprience-card:hover{
-    transform: scale(1.03);
+.edu-list .item:hover,
+.bar:hover,
+.exprience-card:hover {
+  transform: scale(1.03);
+}
+/* service sec  */
+.services .container .content {
+  width: 100%;
+}
+.service-decs h3 {
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+.service-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 20px;
+}
+.service-card {
+  background: var(--card-bg-color);
+  border-bottom: 3px solid var(--second-color);
+  padding: 50px;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+}
+.service-card > i {
+  color: var(--second-color);
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+.service-card h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+.service-card .learn-more-btn {
+  color: var(--third-color);
+  cursor: pointer;
+  transition: 0.3s ease;
+  align-items: center;
+}
+.service-card .learn-more-btn i {
+  transition: 0.3s ease;
+}
+.service-card:hover .learn-more-btn i {
+  transform: translateX(10px);
+}
+.service-modal {
+  z-index: 99999999;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: var(--bg-transparent-color);
+  backdrop-filter: blur(10px);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease;
+}
+.service-modal.active{
+    visibility: visible;
+    opacity: 1;
+}
+.service-modal-body {
+  position: relative;
+  background-color: var(--modal-bg-color);
+  max-width: 500px;
+  margin: 20px;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  transform: translateY(-50px);
+  transition: .5s ease;
+}
+.service-modal.active .service-modal-body{
+    transform: translateY(0);
+}
+.service-modal .modal-close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  cursor: pointer;
+}
+.service-modal-body h3 {
+  font-size: 2em;
+}
+.service-modal-body h4 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin: 15px 0 10px;
+}
+.service-modal-body ul li {
+  margin-top: 15px;
+}
+.service-modal-body ul li i{
+    color: var(--second-color);
+    margin-right: 5px;
 }
