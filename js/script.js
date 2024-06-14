@@ -117,3 +117,46 @@ if (savedTheme) {
   );
   themebtn.classList[savedIcon === "sun" ? "add" : "remove"]("sun");
 }
+// responsive nav toggle
+
+const menubtn = document.querySelector(".nav-menu-btn");
+const closebtn = document.querySelector(".nav-close-btn");
+const navogation = document.querySelector(".navigation");
+const navitems = document.querySelectorAll(".nav-items a");
+
+menubtn.addEventListener("click", () => {
+  navogation.classList.add("active");
+});
+
+closebtn.addEventListener("click", () => {
+  navogation.classList.remove("active");
+});
+
+navitems.forEach((item) => {
+  item.addEventListener("click", () => {
+    navogation.classList.remove("active");
+  });
+});
+
+// scroll animation
+
+// common reavel options animations
+
+ScrollReveal({
+  // reset: true,
+  distance: "60px",
+  duration:2500,
+  delay: 100,
+});
+
+//target animation reveal
+
+ScrollReveal().reveal('.home .info h2, .section-title', { delay: 500, origin: "left" });
+ScrollReveal().reveal('.home .info h3, .home .info p,.about-info .btn', { delay: 500, origin: "left" });
+ScrollReveal().reveal('.home .info .btn', { delay: 700, origin: "bottom" });
+ScrollReveal().reveal('.media-icons i,.contact-left li', { delay: 500, origin: "left",interval:200 });
+ScrollReveal().reveal('.about  .decs, .copyright', { delay: 600, origin: "right"});
+ScrollReveal().reveal('.about, .professional-list li ', { delay: 500, origin: "right",interval:200});
+ScrollReveal().reveal('.skills-decs, .service-decs,.contact-card,.client-swiper,.contact left h2 ', { delay: 700, origin: "left"});
+ScrollReveal().reveal('.exprience-card, .service-card, .education, .portfolio .img-card', { delay: 800, origin: "bottom",interval:200});
+ScrollReveal().reveal('footer .me', { delay: 500, origin: "top",interval:200});
