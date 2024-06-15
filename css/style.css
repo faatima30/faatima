@@ -353,7 +353,7 @@ header.sticky {
   padding-bottom: 25px;
   border-bottom: 2px solid var(--line-color);
 }
-.about-info .fessional-lisprot {
+.about-info .professional-list {
   display: flex;
   column-gap: 30px;
 }
@@ -1043,13 +1043,13 @@ footer a {
     visibility: hidden;
   }
   /* hero/home section  */
-  .home{
+  .home {
     background: url(../images/home-img.png);
     background-position: center;
     object-fit: cover;
     background-size: cover;
     background-repeat: no-repeat;
-    overlay:var(--scroll-thumb-color);
+    overlay: var(--scroll-thumb-color);
   }
   .home-container .home-img img {
     visibility: hidden;
@@ -1070,43 +1070,38 @@ footer a {
   }
   .about-info {
     max-width: 700px;
-    min-width: 0; 
+    min-width: 0;
     margin-right: 50px;
     margin-left: 50px;
-  }
-
-  .about-info .professional-list {
-    flex-direction: column;
   }
   .about-info .professional-list .list-item {
     justify-content: start;
   }
   /* scroll-to-top */
-.scrollToTop-btn {
-  visibility: hidden;
-
-}
+  .scrollToTop-btn {
+    visibility: hidden;
+  }
   /* education and skill section  */
   .skills-info {
     display: block;
     width: 80%;
-    gap:30px;
+    gap: 30px;
   }
-  .skills-info .education-all .education .siki{
+  .skills-info .education-all .education .siki {
     margin-top: 70px;
   }
   .skills-decs {
-  margin-left: 20px; 
-  margin-right: 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
   }
   /* service section  */
-  .service-list{
+  .service-list {
     display: flex;
     flex-direction: column;
     column-gap: 20px;
     width: 90%;
   }
-  .services .container .content{
+  .services .container .content {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -1124,60 +1119,57 @@ footer a {
     width: 100%;
     display: grid;
   }
-  .contact-card .title{
+  .contact-card .title {
     font-size: 0.8em;
     line-height: 50px;
   }
   /* my client  */
-  .client-swiper .swiper-slide{
+  .client-swiper .swiper-slide {
     flex-direction: column;
   }
-  .client-details{
+  .client-details {
     text-align: center;
   }
   /* contact me section  */
-  .contact{
+  .contact {
     width: 90%;
     justify-content: center;
   }
-  .contact .content{
+  .contact .content {
     flex-direction: column;
     font-size: 0.9rem;
   }
-  .contact .contact-left{
+  .contact .contact-left {
     margin-bottom: 40px;
   }
-.contact-form .second-row{
-  flex-direction: column;
-}
- .contact-form .second-row input{
-  width: 100%;
- }
- .contact-form .second-row .sub {
-  margin-left: 0;
-}
-.contact-right{
-  width: 90%;
-}
-/* footer sec  */
-footer {
-  width: 93%;
-}
-footer .footer-container{
-  flex-direction: column;
-}
-.footer-container .about, .footer-container .info{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-bottom: 50px;
-}
-.footer-container .hr{
-width: 100%;
-}
-}
-@media screen and (max-width:730){
-/* common for all */
-
+  .contact-form .second-row {
+    flex-direction: column;
+  }
+  .contact-form .second-row input {
+    width: 100%;
+  }
+  .contact-form .second-row .sub {
+    margin-left: 0;
+  }
+  .contact-right {
+    width: 90%;
+  }
+  /* footer sec  */
+  footer {
+    width: 93%;
+  }
+  footer .footer-container {
+    flex-direction: column;
+  }
+  .footer-container .about,
+  .footer-container .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .footer-container .hr {
+    width: 100%;
+  }
 }
