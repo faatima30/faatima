@@ -207,8 +207,10 @@ header.sticky {
 }
 .nav-bar .logo {
   color: var(--first-color);
-  font-size: 1.3em;
-  font-weight: 600;
+  font-size: 2em;
+  font-family: "Matemasie", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .nav-items a {
   color: var(--first-color);
@@ -472,13 +474,13 @@ header.sticky {
   width: 89%;
 }
 .bar .js::before {
-  width: 80%;
+  width: 70%;
 }
 .bar .react::before {
-  width: 81%;
+  width: 79%;
 }
 .bar .node::before {
-  width: 84%;
+  width: 81%;
 }
 .bar .mongo::before {
   width: 86%;
@@ -490,7 +492,13 @@ header.sticky {
   width: 91%;
 }
 .bar .figma::before {
-  width: 98%;
+  width: 87%;
+}
+.bar .UX::before {
+  width: 73%;
+}
+.bar .UI::before {
+  width: 89%;
 }
 .bar .AI::before {
   width: 96%;
@@ -631,6 +639,7 @@ header.sticky {
   margin-right: 5px;
 }
 /* portfolio section */
+
 .portfolio .container .content {
   width: 100%;
 }
@@ -684,7 +693,8 @@ header.sticky {
 .portfolio-list .img-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill
+  ;
 }
 .portfolio-modal {
   z-index: 999999;
