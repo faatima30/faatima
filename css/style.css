@@ -877,6 +877,18 @@ get-in-touch .container .content {
   color: var(--first-color);
   font-weight: 700;
 }
+.what{
+border: 2px solid green;
+padding: 10px 20px;
+}
+.what:hover{
+  border: 2px solid green;
+  padding: 10px 20px;
+  background: rgb(136, 234, 136);
+  cursor: pointer;
+  color:white;
+  transition: 1s ease;
+  }
 .contact-form input,
 .contact-form textarea {
   border: none;
